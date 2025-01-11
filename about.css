@@ -25,9 +25,9 @@ nav {
 }
 
 .logo {
-    width: 250px; /* Increased size */
+    width: 250px; 
     height: auto;
-    flex-shrink: 0; /* Ensures the logo does not affect navbar height */
+    flex-shrink: 0; 
 }
 
 nav a {
@@ -66,7 +66,7 @@ nav a::before {
     left: 0;
     height: 100%;
     width: 2px;
-    /* background-color: #2F9426; */
+    
     transform: scaleY(0);
     transition: transform 0.3s ease-in-out;
 }
@@ -79,35 +79,63 @@ nav a:first-child::before {
     display: none;
 }
 
-/* Responsive Design Rules */
-@media (max-width: 768px) {
+
+@media (max-width: 1000px) {
     nav {
-        flex-direction: column; /* Stacks logo and links vertically */
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: #191919;
+        position: relative; /* Ensures absolute positioning works */
     }
-
-    nav .logo {
-        margin-bottom: 10px;
-        width: 150px;
+    
+    .logo {
+        width: 250px;
+        height: auto;
+        flex-shrink: 0;
     }
-
-    nav div {
-        justify-content: space-around; /* Space evenly for smaller devices */
+    
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Position below the navbar */
+        left: 0;
+        right: 0;
+        background-color: #191919;
+        padding: 10px;
+        gap: 10px;
+        z-index: 10; /* Ensures it appears above other elements */
+        animation: slide-down 0.3s ease-in-out;
     }
-
+    
+    nav:hover .nav-links {
+        display: flex; /* Show links when hovering over the navbar */
+    }
+    
     nav a {
-        font-size: 12px;
-        margin: 5px;
+        text-decoration: none;
+        color: #F2F2F2;
+        font-size: 16px;
+        text-transform: uppercase;
+        transition: color 0.3s;
     }
-}
-
-@media (max-width: 480px) {
-    nav .logo {
-        width: 120px;
+    
+    nav a:hover {
+        color: #D8761D;
     }
-
-    nav a {
-        font-size: 10px;
+    
+    /* Animation */
+    @keyframes slide-down {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }
 
