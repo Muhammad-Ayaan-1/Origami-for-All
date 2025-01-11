@@ -20,6 +20,7 @@ nav {
 }
 
 nav a {
+    padding: 10px 100px;
     text-decoration: none;
     color: #F2F2F2;
     margin: 0 15px;
@@ -59,7 +60,10 @@ nav a::before {
     transform: scaleY(0);
     transition: transform 0.3s ease-in-out;
 }
+.nav-links{
+    padding-right: 100px;
 
+}
 nav a:hover::before {
     transform: scaleY(1);
 }

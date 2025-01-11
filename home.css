@@ -13,11 +13,17 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 100px;
     background-color: #191919;
 }
 
+.nav-links{
+    padding-right: 100px;
+
+}
+
 .logo {
+   
     width: 250px; 
     height: auto;
     flex-shrink: 0; 
