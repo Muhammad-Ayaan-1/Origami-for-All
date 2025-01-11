@@ -1,0 +1,11 @@
+feedback form
+https://www.jotform.com/build/243600255519453?s=templates
+
+COLOR CODES;
+orange: #D8761D
+black: #191919
+white: #F2F2F2
+green: #2F9426
+
+FONTS;
+Archivo, Archivo Condensed, Archivo expanded

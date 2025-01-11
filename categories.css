@@ -1,0 +1,231 @@
+body { 
+    margin: 0;
+    font-family: Archivo;
+    background-color: #F2F2F2;
+    color: #191919;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #191919;
+    flex-wrap: wrap; 
+}
+
+nav .logo {
+    width: 200px; 
+    flex-shrink: 0;
+}
+
+nav div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F2F2F2;
+    margin: 5px 10px;
+    position: relative;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    white-space: nowrap; 
+}
+
+nav a:hover {
+    color: #D8761D;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #D8761D;
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:first-child::before {
+    display: none;
+}
+
+/* Responsive Design Rules */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stacks logo and links vertically */
+        text-align: center;
+    }
+
+    nav .logo {
+        margin-bottom: 10px;
+        width: 150px;
+    }
+
+    nav div {
+        justify-content: space-around; /* Space evenly for smaller devices */
+    }
+
+    nav a {
+        font-size: 12px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .logo {
+        width: 120px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+}
+
+
+/* sec1 */
+
+.sec1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 35px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.header{
+    background-image: url(categories/backrgrounds/sec1bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_hd{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 1000;
+    transition: all 0.5s ease-in-out;
+}
+
+.underline{
+    height: 2px;
+    width: 0%;
+    background-color: #D8761D;
+    box-shadow: 5px 5px 5px  #3333336e;
+    transition: all 1.1s ease-in-out;
+}
+
+.header:hover .underline{
+    
+    width: 52%;
+}
+.header:hover .header_hd{
+    color: #fff;
+    letter-spacing: 10px;
+}
+
+.crd{
+    border-radius: 15px;
+}
+
+.card {
+    text-decoration: none;
+    border: 0px;
+    width: 300px;
+    height: 300px; /* Adjust height to accommodate the heading */
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust height for the image */
+}
+
+.image-container img {
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.image-container p {
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #D8761D;
+}
+
+.image-container .overlay {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover img {
+    filter: blur(3px);
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.card-heading {
+   
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    /* margin-top: 10px; */
+}
+
+h2{
+    align-self: center;
+    text-align: center;
+    background-color: #D8761D;
+    height: 250px;
+    width: 100%;
+    color: #fff;
+   
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

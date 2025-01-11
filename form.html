@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="form.css">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="logo/logo_vertical.png" type="image/x-icon">
+</head>
+
+<body>
+  <nav>
+    <img src="logo/logo_horizontal.png" class="logo" alt="Logo">
+    <div>
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About Us</a>
+      <a href="form.html">Feedback</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+
+
+
+  <div class="forum">
+    <form>
+
+      <div class="logo">
+        <!-- <img src="logo/logo_vertical.png" alt="Logo"> -->
+      </div>
+
+      <h1 class="heading">Your Feedback</h1>
+
+      <div class="radio-buttons">
+        <label>
+          <input type="radio" name="feedback-type" value="suggestion"> Suggestion
+        </label>
+        <label>
+          <input type="radio" name="feedback-type" value="comments"> Comments
+        </label>
+        <label>
+          <input type="radio" name="feedback-type" value="question"> Question
+        </label>
+      </div>
+
+      <div class="feedback">
+        <label for="feedback-text">Describe your feedback:</label>
+        <textarea id="feedback-text" name="feedback" rows="4" placeholder="Type your feedback here..."></textarea>
+      </div>
+
+      <div class="name-fields">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name">
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+      </div>
+      <div class="container">
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+  </div>
+  </form>
+  </div>
+  </div>
+  <footer>
+    &copy; 2024 OrigamiForAll. All Rights Reserved.
+</footer>
+</body>
+
+</html>
