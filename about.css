@@ -59,10 +59,7 @@ nav a::after {
 nav a:hover::after {
     width: 100%;
 }
-.nav-links{
-    padding-right: 100px;
 
-}
 nav a::before {
     content: "";
     position: absolute;

@@ -14,10 +14,7 @@ body{
 }
 
 /* Navigation */
-.nav-links{
-    padding-right: 100px;
 
-}
 nav {
     display: flex;
     align-items: center;

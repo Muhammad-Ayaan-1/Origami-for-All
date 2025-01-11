@@ -163,10 +163,7 @@ nav a::after {
   background-color: #D8761D;
   transition: width 0.3s ease-in-out;
 }
-.nav-links{
-  padding-right: 100px;
 
-}
 
 nav a:hover::after {
   width: 100%;
