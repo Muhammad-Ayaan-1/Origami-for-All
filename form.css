@@ -257,7 +257,7 @@ form {
     width: 100%;
     max-width: 600px;
     position: relative;
-    top: 60px;
+    /* top: 60px; */
     overflow: hidden; /* Prevent overflow of animations */
 }
 
@@ -358,7 +358,7 @@ button.submit-btn:hover {
 
 .forum {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
