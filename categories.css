@@ -172,10 +172,10 @@ nav a:first-child::before {
     
     width: 52%;
 }
-.header:hover .header_hd{
+/* .header:hover .header_hd{
     color: #fff;
     letter-spacing: 10px;
-}
+} */
 
 .crd{
     border-radius: 15px;
