@@ -1,0 +1,123 @@
+:root{
+    --orange: #D8761D;
+    --black: #191919;
+    --white: #f2f2f2;
+    --green: #2F9426;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Archivo;
+
+}
+body{
+    background-color: white;
+}
+section{
+    padding-top: 50px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    text-align: center;
+    width: 100vw;
+
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: 1000;
+}
+
+.header p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.header .subtext{
+    font-style: italic;
+    padding-top: 10px;
+    /* width: 20%; */
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+
+    
+}
+
+b{
+    font-family: montserrat;
+    font-size: 30px;
+    font-weight: 1000;
+    color: orange;
+}
+
+.container{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+}
+
+
+.container .card{
+    cursor: pointer;
+    padding: 20px  ;
+    background-color:var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    width: 100%;
+}
+.card .underline{
+    margin: 20px 0px;
+    border-radius: 10px;
+    background-color: orange;
+    height: 5px;
+    width: 50%;
+   
+}
+
+.card_img{
+    margin-bottom:20px ;
+    position: initial;
+    border: 2px solid green;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    /* height: 500px; */
+    transition: all 0.5s ease-in-out;
+}
+
+.card_img:hover{
+    scale: 1.02;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.card .steps{
+    font-size: 1.2rem;
+    text-align: center;
+    font-style: italic;
+
+}
+
+.card h2{
+    padding-bottom: 20px;
+    font-weight: 800;
+    font-size: 35px;
+}
