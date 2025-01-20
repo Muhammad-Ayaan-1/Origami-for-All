@@ -149,6 +149,9 @@ section{
 }
 
 .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     width: 100vw;
 
@@ -191,7 +194,7 @@ b{
     align-items: center;
     gap: 40px;
     height: 100%;
-    width: 50%;
+    width: 80%;
     background-color: transparent;
 }
 
@@ -246,6 +249,23 @@ b{
     font-weight: 800;
     font-size: 35px;
 }
+
+@media (max-width: 750px) {
+    .card_img{
+        width: 90%;
+    }
+    .card .underline{
+        height: 3px;
+        width: 90%;
+    }
+    .header .subtext{
+        width: 80% ;
+    }
+
+
+}
+
+/* footer */
 
 .footer {
     background-color: #000;
