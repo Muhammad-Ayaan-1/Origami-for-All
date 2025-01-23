@@ -311,7 +311,7 @@ h2::after {
     height: auto;
 }
 .about-text {
-    width: 50%;
+    width: 80%;
     font-size: 20px;
 }
 #slogan {
@@ -328,6 +328,7 @@ p {
     letter-spacing: 1px;
 }
 #about {
+    
     padding: 0px 100px;
     display: flex;
     justify-content: space-between;
