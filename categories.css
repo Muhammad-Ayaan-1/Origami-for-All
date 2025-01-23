@@ -178,8 +178,8 @@ nav a:first-child::before {
 } */
 
 
-
 .card {
+    text-decoration: none;
     width: 300px;
     height: 400px;
     background: #fff;
